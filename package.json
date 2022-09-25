@@ -1,0 +1,16 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "My webiste?",
+  "main": "index.html",
+  "scripts": {
+    "sass": "npx sass style.scss style.css",
+    "ts": "tsc"
+  },
+  "author": "mohamed arish",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.55.0",
+    "typescript": "^4.8.3"
+  }
+}
