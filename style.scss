@@ -6,19 +6,77 @@
 .dark {
     background: #333;
     color: #fff;
+
+    .outer-main {
+        .github {
+            background-image: url(./icons/github-dark.png);
+        }
+
+        .gitlab {
+            background-image: url(./icons/gitlab-dark.png);
+        }
+
+        .mail {
+            background-image: url(./icons/email-dark.png);
+        }
+    }
+
+    .start {
+        background: #333;
+    }
+
+    .projects {
+        background: #444;
+    }
 }
 
 .light {
-    background: #fff;
+    background: #eee;
     color: #333;
+
+    .outer-main {
+        .github {
+            background-image: url(./icons/github-light.png);
+        }
+
+        .gitlab {
+            background-image: url(./icons/gitlab-light.png);
+        }
+
+        .mail {
+            background-image: url(./icons/email-light.png);
+        }
+    }
+
+    .start {
+        background: #fff;
+    }
+
+    .projects {
+        background: #eee;
+    }
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    .start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 }
 
 #typing {
@@ -49,24 +107,19 @@ body {
     border-radius: 12px;
     border: 3px solid gray;
     display: flexbox;
-    padding: 12px;
-    width: 14vw;
-    height: 15vh;
+    padding: 24px;
+    width: 15vw;
+    height: 17vh;
     margin: 16px 0;
 
     .image {
         height: 96px;
         width: 96px;
         border-radius: 48px;
-        margin-bottom: 6px;
+        margin-bottom: 12px;
     }
 
     .name {
         font-size: x-large;
     }
-}
-
-.links {
-    display: grid;
-    word-spacing: 25%;
 }

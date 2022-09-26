@@ -35,51 +35,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 	StartTextAnimation(0);
 
-	const body = document.querySelector("body");
-
-	if (!body) return;
-
-	console.log(body.classList);
-
-	const linksDiv = body.querySelector(".links");
-
-	if (!linksDiv) return;
-
-	if (body.classList.contains("dark")) {
-		const github = document.createElement("img");
-		github.setAttribute("src", "./icons/github-dark.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		github.setAttribute("alt", "github-icon");
-
-		const gitlab = document.createElement("img");
-		github.setAttribute("src", "./icons/gitlab-dark.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		gitlab.setAttribute("alt", "gitlab-icon");
-
-		const linkedin = document.createElement("img");
-		github.setAttribute("src", "./icons/linkedin-dark.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		linkedin.setAttribute("alt", "linkedin-icon");
-	} else if (body.classList.contains("light")) {
-		const github = document.createElement("img");
-		github.setAttribute("src", "./icons/github-light.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		github.setAttribute("alt", "github-icon");
-
-		const gitlab = document.createElement("img");
-		github.setAttribute("src", "./icons/gitlab-light.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		gitlab.setAttribute("alt", "gitlab-icon");
-
-		const linkedin = document.createElement("img");
-		github.setAttribute("src", "./icons/linkedin-light.png");
-		github.setAttribute("height", "32px");
-		github.setAttribute("width", "32px");
-		linkedin.setAttribute("alt", "linkedin-icon");
-	}
+	
 });
