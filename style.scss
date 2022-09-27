@@ -108,8 +108,8 @@ body {
     border: 3px solid gray;
     display: flexbox;
     padding: 24px;
-    width: 15vw;
-    height: 17vh;
+    width: 350px;
+    height: 200px;
     margin: 16px 0;
 
     .image {
@@ -121,5 +121,6 @@ body {
 
     .name {
         font-size: x-large;
+        margin-bottom: 12px;
     }
 }

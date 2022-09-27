@@ -35,5 +35,22 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	}
 	StartTextAnimation(0);
 
-	
+	const docBody = document.body;
+	const githubImage = document.getElementById("github");
+	const gitlabImage = document.getElementById("gitlab");
+	const mailImage = document.getElementById("mail");
+
+	if (!githubImage) return;
+	if (!gitlabImage) return;
+	if (!mailImage) return;
+
+	if (docBody.classList.contains("dark")) {
+		githubImage.setAttribute("src", "./icons/github-dark.png");
+		gitlabImage.setAttribute("src", "./icons/gitlab-dark.png");
+		mailImage.setAttribute("src", "./icons/email-dark.png");
+	} else if (docBody.classList.contains("light")) {
+		githubImage.setAttribute("src", "./icons/github-light.png");
+		gitlabImage.setAttribute("src", "./icons/gitlab-light.png");
+		mailImage.setAttribute("src", "./icons/email-light.png");
+	}
 });
