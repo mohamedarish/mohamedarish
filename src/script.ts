@@ -1,4 +1,7 @@
+import customGH from "./types/customGH";
 import { Github } from "./types/github";
+
+let arrayOfRepos: HTMLElement[] = [];
 
 document.addEventListener('DOMContentLoaded', async function (event) {
 	const dataText = ["Hello, I'm Arish"];
@@ -75,6 +78,28 @@ document.addEventListener('DOMContentLoaded', async function (event) {
 		mailImage.setAttribute("src", "./icons/email-light.png");
 		themeSwitcher.setAttribute("src", "./icons/sun.png");
 	}
+
+	let repoFinal: customGH[] = [];
+
+	let githubRepos = await (await fetch("https://api.github.com/users/mohamedarish/repos")).json() as Github[];
+
+	if (!githubRepos) return;
+
+	githubRepos = githubRepos.filter(element => { return !element.fork });
+
+
+
+	githubRepos.forEach(repo => {
+		repoFinal.push({
+			repoName: repo.name,
+			description: repo.description,
+			link: repo.html_url,
+			language: repo.language
+		});
+
+
+	});
+
 });
 
 
