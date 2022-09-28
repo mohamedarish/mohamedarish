@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+import { Github } from "./types/github";
+
+document.addEventListener('DOMContentLoaded', async function (event) {
 	const dataText = ["Hello, I'm Arish"];
 
 	function typeWriter(text: string, i: number, fnCallback: () => void) {
