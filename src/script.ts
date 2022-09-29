@@ -1,6 +1,7 @@
 import { Github } from "./types/github";
 
 let arrayOfRepos: HTMLDivElement[] = [];
+let def = 0;
 
 document.addEventListener('DOMContentLoaded', async function (event) {
 	const dataText = ["Hello, I'm Arish"];
@@ -107,6 +108,21 @@ document.addEventListener('DOMContentLoaded', async function (event) {
 
 	console.log(arrayOfRepos);
 
+	const scroller = document.getElementById("slider");
+
+	if (!scroller) return;
+
+	arrayOfRepos[arrayOfRepos.length - def - 1].id = "prev";
+	arrayOfRepos[def].id = "current";
+	arrayOfRepos[def + 1].id = "next";
+
+	// arrayOfRepos.forEach(repo => {
+	// 	scroller.appendChild(repo);
+	// });
+
+	scroller.appendChild(arrayOfRepos[arrayOfRepos.length - def - 1]);
+	scroller.appendChild(arrayOfRepos[def]);
+	scroller.appendChild(arrayOfRepos[def + 1]);
 });
 
 
@@ -146,3 +162,57 @@ if (themeSwitcher) {
 		localStorage.setItem("theme", bodyElement.classList.contains("light") ? "light" : "dark");
 	}
 };
+
+
+const prevRepo = document.getElementById("prev");
+const nextRepo = document.getElementById("next");
+
+if (nextRepo && prevRepo) {
+	nextRepo.onclick = () => {
+		def = (def + 1) % arrayOfRepos.length;
+
+		const scroller = document.getElementById("slider");
+
+		const prevChild = arrayOfRepos[def - 1 < 0 ? arrayOfRepos.length - def - 1 : def - 1];
+		const currentChild = arrayOfRepos[def];
+		const nextChild = arrayOfRepos[def + 1];
+
+		prevChild.id = "prev";
+		currentChild.id = "current";
+		nextChild.id = "next"
+
+		if (!scroller) return;
+
+		while (scroller.lastChild) {
+			scroller.removeChild(scroller.lastChild);
+		}
+
+		scroller.appendChild(prevChild);
+		scroller.appendChild(currentChild);
+		scroller.appendChild(nextChild);
+	}
+
+	prevRepo.onclick = () => {
+		def = def - 1 < 0 ? arrayOfRepos.length - def - 1 : def - 1;
+
+		const scroller = document.getElementById("slider");
+
+		const prevChild = arrayOfRepos[def - 1 < 0 ? arrayOfRepos.length - def - 1 : def - 1];
+		const currentChild = arrayOfRepos[def];
+		const nextChild = arrayOfRepos[def + 1];
+
+		prevChild.id = "prev";
+		currentChild.id = "current";
+		nextChild.id = "next"
+
+		if (!scroller) return;
+
+		while (scroller.lastChild) {
+			scroller.removeChild(scroller.lastChild);
+		}
+
+		scroller.appendChild(prevChild);
+		scroller.appendChild(currentChild);
+		scroller.appendChild(nextChild);
+	}
+}
