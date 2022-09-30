@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -32,6 +34,10 @@
             background: #555;
             color: #ddd;
         }
+        a {
+            text-decoration: none;
+            color: #cfb278;
+        }
     }
 }
 
@@ -63,6 +69,11 @@
         .repo {
             background: #ddd;
             color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #cfb278;
         }
     }
 }
@@ -139,12 +150,13 @@ body {
 
 #desc {
     margin: 12px;
+    font-size: x-large;
+    font-family: "Prompt", sans-serif;
 }
 
 #slider {
     display: flex;
     flex-direction: row;
-    margin: 12px;
 
     .repo {
         margin: 12px;
@@ -156,37 +168,13 @@ body {
         border-radius: 12px;
         border: 3px solid #999;
 
-        a .repoLink {
-            text-decoration: none;
-
-            h3 .repoName {
-                margin-bottom: 12px;
-                font-size: xx-large;
-            }
+        h3 {
             margin-bottom: 12px;
         }
 
         p .description {
+            margin-top: 12px;
             font-size: larger;
         }
-
-        img {
-            position: inherit;
-            transform: translate();
-        }
-    }
-
-    #prev {
-        opacity: 0.5;
-        transform: translateY(10%);
-    }
-
-    #current {
-        transform: scale(110%);
-    }
-
-    #next {
-        opacity: 0.5;
-        transform: translateY(10%);
     }
 }
