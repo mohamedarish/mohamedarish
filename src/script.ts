@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 			}
 		}
 	} else {
-		docBody.classList.add("light");
+		docBody.classList.add("dark");
 	}
 
 	if (docBody.classList.contains("dark")) {
@@ -88,37 +88,31 @@ document.addEventListener('DOMContentLoaded', async function () {
 	githubRepos = githubRepos.filter(element => { return !element.fork });
 
 	githubRepos.forEach(repo => {
-		const headLink = document.createElement("div");
-		headLink.classList.add("album-item");
+		const containerDiv = document.createElement("div");
+		containerDiv.classList.add("repo");
 
-		const detailSpan = document.createElement("span");
-		detailSpan.classList.add("album-details");
+		const titleLink = document.createElement("a");
+		titleLink.setAttribute("href", repo.html_url);
+		titleLink.setAttribute("target", "_blank");
 
-		const linkToRepo = document.createElement("a");
-		linkToRepo.setAttribute("target", "_blank");
-		linkToRepo.setAttribute("href", repo.html_url);
+		const headTitle = document.createElement("h3");
+		headTitle.innerText = repo.name;
 
-		const titleSpan = document.createElement("span");
-		titleSpan.classList.add("title");
-		titleSpan.innerText = repo.name;
+		titleLink.appendChild(headTitle);
 
-		linkToRepo.appendChild(titleSpan);
+		const descPara = document.createElement("p");
+		descPara.classList.add("description");
+		descPara.innerText = repo.description || "";
 
-		const descSpan = document.createElement("span");
-		descSpan.classList.add("subtitle");
-		descSpan.innerText = repo.description || "";
+		containerDiv.appendChild(titleLink);
+		containerDiv.appendChild(descPara);
 
-		detailSpan.appendChild(linkToRepo);
-		detailSpan.appendChild(descSpan);
-
-		headLink.appendChild(detailSpan);
-
-		arrayOfRepos.push(headLink);
+		arrayOfRepos.push(containerDiv);
 	});
 
 	console.log(arrayOfRepos);
 
-	const scroller = document.getElementById("album-rotator-holder");
+	const scroller = document.getElementById("holder");
 
 	if (!scroller) return;
 
