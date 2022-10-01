@@ -3,7 +3,7 @@ import { Github } from "./types/github";
 let arrayOfRepos: HTMLDivElement[] = [];
 let def = 0;
 
-document.addEventListener('DOMContentLoaded', async function (event) {
+document.addEventListener('DOMContentLoaded', async function () {
 	const dataText = ["Hello, I'm Arish"];
 
 	function typeWriter(text: string, i: number, fnCallback: () => void) {
@@ -83,36 +83,48 @@ document.addEventListener('DOMContentLoaded', async function (event) {
 
 	if (!githubRepos) return;
 
+	console.log(githubRepos);
+
 	githubRepos = githubRepos.filter(element => { return !element.fork });
 
 	githubRepos.forEach(repo => {
-		const header = document.createElement("h3");
-		header.classList.add("repoTitle");
-		header.innerText = repo.name;
-		const link = document.createElement("a");
-		link.setAttribute("href", repo.html_url);
-		link.appendChild(header);
+		const headLink = document.createElement("div");
+		headLink.classList.add("album-item");
 
-		const paragraph = document.createElement("p");
-		paragraph.classList.add("description");
-		paragraph.innerText = repo.description || "";
+		const detailSpan = document.createElement("span");
+		detailSpan.classList.add("album-details");
 
-		const headDiv = document.createElement("div");
-		headDiv.classList.add("repo");
+		const linkToRepo = document.createElement("a");
+		linkToRepo.setAttribute("target", "_blank");
+		linkToRepo.setAttribute("href", repo.html_url);
 
-		headDiv.appendChild(link);
-		headDiv.appendChild(paragraph);
+		const titleSpan = document.createElement("span");
+		titleSpan.classList.add("title");
+		titleSpan.innerText = repo.name;
 
-		arrayOfRepos.push(headDiv);
+		linkToRepo.appendChild(titleSpan);
+
+		const descSpan = document.createElement("span");
+		descSpan.classList.add("subtitle");
+		descSpan.innerText = repo.description || "";
+
+		detailSpan.appendChild(linkToRepo);
+		detailSpan.appendChild(descSpan);
+
+		headLink.appendChild(detailSpan);
+
+		arrayOfRepos.push(headLink);
 	});
 
 	console.log(arrayOfRepos);
 
-	const scroller = document.getElementById("slider");
+	const scroller = document.getElementById("album-rotator-holder");
 
 	if (!scroller) return;
 
-	scroller.appendChild(arrayOfRepos[def]);
+	arrayOfRepos.forEach(repo => {
+		scroller.appendChild(repo);
+	});
 });
 
 

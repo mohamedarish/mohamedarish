@@ -157,6 +157,7 @@ body {
 #slider {
     display: flex;
     flex-direction: row;
+    transition: all 0.5s ease-in-out;
 
     .repo {
         margin: 12px;

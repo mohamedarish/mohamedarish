@@ -11,4 +11,6 @@
 - 30/9: I realized today is the 30th adn not yesterday and fixed it in the devlog.
   - Update 1: Starting work on the website again and hoping I can get everything done today atleast.
   - Update 2: What if I make my website for mobile and it would just center the content for PCs and bigger screens 😀🧠.
+- 1/10: Not changing from BSNL and they still don't give me proper internet :(
+  - Update 1: Scroller and media query or just scroller?
   
