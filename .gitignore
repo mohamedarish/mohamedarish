@@ -1,8 +1,8 @@
-dist/
+# dist/
 
-*.css.*
+# *.css.*
 
-*.css
+# *.css
 
 node_modules/
 
