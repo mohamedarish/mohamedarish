@@ -83,8 +83,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 	if (!githubRepos) return;
 
-	console.log(githubRepos);
-
 	githubRepos = githubRepos.filter(element => { return !element.fork });
 
 	githubRepos.forEach(repo => {
@@ -109,8 +107,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 		arrayOfRepos.push(containerDiv);
 	});
-
-	console.log(arrayOfRepos);
 
 	const scroller = document.getElementById("holder");
 

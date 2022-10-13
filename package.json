@@ -8,7 +8,7 @@
 		"ts": "tsc",
 		"bundle": "npx webpack",
 		"build": "npm run sass && npm run ts && npm run bundle",
-		"serve": "node ./dist/deploy.js"
+		"serve": "node ./deploy.js"
 	},
 	"author": "mohamed arish",
 	"license": "MIT",
