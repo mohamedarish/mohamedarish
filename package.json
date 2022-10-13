@@ -2,9 +2,9 @@
 	"name": "my-site",
 	"version": "1.0.0",
 	"description": "My webiste?",
-	"main": "./dist/deploy.js",
+	"main": "deploy.js",
 	"scripts": {
-		"sass": "npx sass ./sass/style.scss ./style.css",
+		"sass": "npx sass ./sass/style.scss ./public/style.css",
 		"ts": "tsc",
 		"bundle": "npx webpack",
 		"build": "npm run sass && npm run ts && npm run bundle",
