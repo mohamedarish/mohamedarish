@@ -26,9 +26,6 @@
 
 ## Github Stats
 
-![mohamedarish](https://streak-stats.demolab.com/?user=mohamedarish#gh-light-mode-only)
 ![mohamedarish](https://streak-stats.demolab.com/?user=mohamedarish&theme=highcontrast#gh-dark-mode-only)
-![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true#gh-light-mode-only)
 ![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true&theme=onedark#gh-dark-mode-only)
-![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact#gh-light-mode-only)
 ![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact&theme=onedark#gh-dark-mode-only)
