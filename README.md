@@ -1,4 +1,4 @@
-# Hi, 👋 I'm [Mohamed Arish](https://www.mohamedarish.live)
+# Hi, 👋 I'm [Mohamed Arish](https://mohamedarish.live)
 
 - A developer eager to learn more.
 - Cuurently learning: Rust🦀
