@@ -7,25 +7,25 @@
 
 ## Languages and technologies
 
-![linux](assets/linux.png "linux") ![html](assets/html.png "html") ![css](assets/css.png "css") ![javascript](assets/javascript.png "javascript") ![python](assets/python.png "python") ![nodejs](assets/nodejs.png "nodejs") ![vuejs](assets/vuejs.png "vuejs") ![sass](assets/sass.png "sass") ![typescript](assets/typescript.png "typescript") ![postgresql](assets/postgres.png "postgresql") ![docker](assets/docker.png "docker") ![rust](assets/rust.png "rust")
+[![linux](assets/linux.png "linux")](https://www.linux.org) [![html](assets/html.png "html")](https://en.wikipedia.org/wiki/HTML5) [![css](assets/css.png "css")](https://en.wikipedia.org/wiki/CSS) [![javascript](assets/javascript.png "javascript")](https://en.wikipedia.org/wiki/JavaScript) [![python](assets/python.png "python")](https://www.python.org/) [![nodejs](assets/nodejs.png "nodejs")](https://nodejs.org/en/) [![vuejs](assets/vuejs.png "vuejs")](https://vuejs.org/) [![sass](assets/sass.png "sass")](https://sass-lang.com/) [![typescript](assets/typescript.png "typescript")](https://www.typescriptlang.org/) [![postgresql](assets/postgres.png "postgresql")](https://www.postgresql.org/) [![docker](assets/docker.png "docker")](https://www.docker.com/) [![rust](assets/rust.png "rust")](https://www.rust-lang.org/)
 
 ## Special Skills
 
-![discord](assets/discord.png)
+[![discord](assets/discord.png)](https://discord.com/)
 
 - Develop discord bots in python(discordpy/pycord) and typescript(discordjs)
 
-![firefox](assets/firefox.png)
+[![firefox](assets/firefox.png)](https://www.mozilla.org/en-US/firefox/new/)
 
 - Develop Firefox extensions using manifest v2 in typescript
 
-![nodejs](assets/nodejs.png)
+[![nodejs](assets/nodejs.png)](https://nodejs.org/en/)
 
 - Use prisma ORM for using Relational databases in typescript
 - Use webpack to bundle packages into a file usable in the browser.
 
 ## Github Stats
 
-![mohamedarish](https://streak-stats.demolab.com/?user=mohamedarish&theme=highcontrast#gh-dark-mode-only)
-![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true&theme=dark#gh-dark-mode-only)
-![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact&theme=dark#gh-dark-mode-only)
+[![mohamedarish](https://streak-stats.demolab.com/?user=mohamedarish&theme=highcontrast#gh-dark-mode-only)](https://www.github.com/mohamedarish)
+[![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true&theme=dark#gh-dark-mode-only)](https://www.github.com/mohamedarish)
+[![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact&theme=dark#gh-dark-mode-only)](https://github.com/mohamedarish)
