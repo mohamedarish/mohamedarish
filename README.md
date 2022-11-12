@@ -1,7 +1,7 @@
 # Hi, 👋 I'm [Mohamed Arish](https://mohamedarish.live)
 
 - A developer eager to learn more.
-- Cuurently learning: Rust🦀
+- Currently learning: Rust🦀
 - Currently working on: Learning rust
 - Interested to do everything open-source
 
