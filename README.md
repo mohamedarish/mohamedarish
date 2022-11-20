@@ -26,6 +26,8 @@
 
 ## Github Stats
 
-[![mohamedarish](https://streak-stats.demolab.com/?user=mohamedarish&theme=highcontrast#gh-dark-mode-only)](https://www.github.com/mohamedarish)
-[![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true&theme=dark#gh-dark-mode-only)](https://www.github.com/mohamedarish)
-[![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact&theme=dark#gh-dark-mode-only)](https://github.com/mohamedarish)
+[![mohamedarish](https://streak-stats.demolab.com?user=mohamedarish&theme=tokyonight_duo&border_radius=5&date_format=j%20M%5B%20Y%5D&background=DD272700&currStreakNum=417E87&ring=025BDA&sideLabels=025BDA&sideNums=025BDA&dates=417E87&currStreakLabel=417E87&fire=417E87)](https://www.github.com/mohamedarish)
+
+[![mohamedarish](https://github-readme-stats.vercel.app/api?username=mohamedarish&show_icons=true&theme=transparent)](https://www.github.com/mohamedarish)
+
+[![language stats](https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedarish&layout=compact&theme=transparent&langs_count=8)](https://github.com/mohamedarish)
