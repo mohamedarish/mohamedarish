@@ -19,10 +19,13 @@
 
 - Develop Firefox extensions using manifest v2 in typescript
 
-[![nodejs](assets/nodejs.png)](https://nodejs.org/en/)
+[![webpack](assets/webpack.png)](https://webpack.js.org/)
 
-- Use prisma ORM for using Relational databases in typescript
-- Use webpack to bundle packages into a file usable in the browser.
+- Bundle Files using webpack
+
+[![prisma](assets/prisma.png)](https://www.prisma.io/)
+
+- Use prisma ORM to create and query databases.
 
 ## Github Stats
 
