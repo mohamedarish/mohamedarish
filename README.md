@@ -1,3 +1,3 @@
-# Hi, 👋 I'm [Mohamed Arish](https://mohamedarish.tech)
+# Hallo!!, 👋 I'm [Mohamed Arish](https://mohamedarish.tech)
 
 Open Source Enthusiast
